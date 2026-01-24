@@ -37,6 +37,10 @@
   z-index: 2;
 }
 
+.section-inner-container > h2, .section-inner-container > div > h2 {
+  opacity: 0;
+}
+
 /* Before md */
 @media (max-width: 767px) {
   .tile h2 {
