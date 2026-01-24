@@ -16,7 +16,7 @@
             {
                 "title": "BSc, Computing Science",
                 "subtitle": "Simon Fraser University",
-                "date": "January 2023 - Present",
+                "date": "January 2023 - December 2025",
                 "img" : "assets/img/logos/sfu.png"
             },
             {
@@ -31,12 +31,12 @@
         "heading": "Skills",
         "color": "var(--orange)",
         "muted_color": "#ff9238",
-        "description": "My greatest strength is my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes!",
+        "description": "My greatest strength is my ability to quickly grasp new concepts and adapt to different programming languages and tools. This flexibility has allowed me to pull off an array of projects of all shapes and sizes!",
         "list": [
             {
                 "heading": "Web development",
-                "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all sizes and complexities, I'm ready to tackle any challenge thrown my way! 👊",
-                "description": "I have a strong background with modern full-stack web technologies like Node.js, Express, and React thanks to my undergrad coursework and projects. All in all, I've enjoyed using these technologies to create robust and scalable web applications, and I'm always trying to learn more.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
+                "cover_description": "I've worked on various full-stack web projects of different sizes and complexity, and I'm always up for the next challenge 👊",
+                "description": "I enjoy building web apps with modern full-stack technologies like Next.js, Node.js, and React. That said, many of my personal projects thrive on the simplicity of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
                 "img": "assets/img/mockups/iphone/iphone-altsource-viewer-2.png",
                 "img_type": "device",
                 "img_alt": "iphone-web-app",
@@ -45,8 +45,8 @@
             },
             {
                 "heading": "Mobile development",
-                "cover_description": "As a passionate Apple fan, I've spent a lot of my free time learning about iOS and, more recently, getting the hang of iOS development.",
-                "description": "I've always been fascinated by user-friendly software, a passion that led me to iOS development. I've built a number of side projects to familiarize myself with iOS frameworks and principles. One of my coolest project to date is \"DontEatMyContent,\" a tweak for the iOS YouTube app which prevents display cutouts from interfering with videos for a better viewing experience.\n\nI also dabbled in Android app development in a college course, creating \"BCExplorer,\" an app that highlights must-see attractions in British Columbia.",
+                "cover_description": "Much of my free time is spent exploring iOS development and experimenting with Apple's tools and frameworks.",
+                "description": "I've always been fascinated by user-friendly software. iOS stood out to me because of its strong emphasis on design consistency and delivering polished user experiences. I've built a number of mini projects to familiarize myself with the various iOS frameworks and principles. One of my favorite to date has to be DontEatMyContent, a tweak for the iOS YouTube app which prevents display cutouts (e.g. Dynamic Island) from interfering with videos for a better viewing experience.",
                 "img": "assets/img/mockups/iphone/iphone-today-1.png",
                 "img_type": "device",
                 "img_alt": "iphone-app",
@@ -56,8 +56,8 @@
             },
             {
                 "heading": "Automation & scripting",
-                "cover_description": "Command-line tools are goated 🐐 – they look simple yet are so incredibly powerful. They're my go-to when I need to get the job done without unnecessary frills.",
-                "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the perfect tool for automating repetitive tasks.",
+                "cover_description": "Command-line tools are my go-to when I need to get the job done without unnecessary frills.",
+                "description": "Shell scripting is goated 🐐. It's been a huge and crucial part of my toolkit. I've used it for all kinds of things, from compiling and packaging my code to tinkering with system services. And I think it might just be the perfect tool for automating repetitive tasks.",
                 "img": "assets/img/window-terminal.png",
                 "img_type": "window",
                 "img_alt": "terminal",
@@ -69,7 +69,7 @@
             {
                 "heading": "Database programming",
                 "cover_description": "\"Why did the database engineer leave his wife?\"",
-                "description": "\"She had one-to-many relationships.\" 🥁\nI gained a strong understanding of relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems during my undergrad career.  This knowledge has allowed me to design efficient schemas and optimize complex queries for specific project needs.",
+                "description": "\"She had one-to-many relationships.\" 🥁\nI've worked extensively with MySQL and SQLite, turning messy real-world data into clean, well-structured schemas. I also write efficient queries (sometimes) that power analytics across years of historical data.",
                 "center_image": true,
                 "bootstrap_icon": "bi-hdd-rack",
                 "md_size": 6,
