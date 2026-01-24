@@ -285,3 +285,21 @@
     transform: translateX(-200%);
   }
 }
+
+@keyframes scroll-by-width {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
+
+@-webkit-keyframes scroll-by-width {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}

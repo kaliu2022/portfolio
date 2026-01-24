@@ -6,9 +6,47 @@
 //  Copyright (c) 2022 Foxster. All rights reserved.
 //
 
-import { $, $$ } from "./lib.js";
-import { Tile } from "./components/Tile.js";
 import { refreshAppearance } from "./appearance.js";
+import { Tile } from "./components/Tile.js";
+import { $, $$ } from "./lib.js";
+
+function initHellos() {
+    const hellos = [
+        "¡Hola, Mundo!", "Bonjour, Le Monde!", "Hallo, Welt!", "Ciao, Mondo!", "Olá, Mundo!", "Привет, Мир!",
+        "你好世界", "こんにちは世界", "안녕하세요, 세계!", "مرحبا بالعالم", "Γεια Σου, Κόσμε!", "Merhaba, Dünya!",
+        "שלום, עולם!", "Hej, Världen!", "Cześć, Świecie!", "Ahoj, Světe!", "Hei, Maailma!", "Helló, Világ!", "नमस्ते, दुनिया!",
+        "Sawubona, Mhlaba!", "Jambo, Dunia!", "สวัสดี, โลก!", "Xin Chào, Thế Giới!", "Kumusta, Mundo!"
+    ].sort(() => Math.random() - 0.5); // Randomize
+    
+    // 3 hello sets with no overlap
+    const itemsPerRow = Math.ceil(hellos.length / 3);
+    const helloSets = [
+        hellos.slice(0, itemsPerRow),
+        hellos.slice(itemsPerRow, itemsPerRow * 2),
+        hellos.slice(itemsPerRow * 2)
+    ];
+    
+    const rowsHTML = $$(".hello-row");
+    rowsHTML.forEach((rowHTML, i) => {
+        const helloSet = helloSets[i];
+        // First set
+        helloSet.forEach(hello => {
+            const span = document.createElement("span");
+            span.textContent = hello;
+            rowHTML.appendChild(span);
+        });
+        
+        // Measure the width of the first set
+        const firstSetWidth = rowHTML.scrollWidth;
+        rowHTML.style.setProperty('--scroll-width', `${firstSetWidth}px`); // Set CSS variable for animation
+        
+        // Add duplicate set for looping
+        const spans = rowHTML.querySelectorAll('span');
+        spans.forEach(span => rowHTML.appendChild(span.cloneNode(true)));
+    });
+}
+
+initHellos();
 
 // Load data
 fetchJSON("assets/data.json").then(data => {
