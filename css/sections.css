@@ -55,7 +55,7 @@
 }
 
 .hello-row:nth-child(2) {
-  animation-direction: reverse;
+  animation: scroll-by-width-reverse 360s linear infinite;
 }
 
 .hello-row > span {

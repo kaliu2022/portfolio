@@ -303,3 +303,21 @@
     transform: translateX(calc(-1 * var(--scroll-width)));
   }
 }
+
+@keyframes scroll-by-width-reverse {
+  from {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes scroll-by-width-reverse {
+  from {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
