@@ -6,8 +6,8 @@
 //  Copyright (c) 2022 Foxster. All rights reserved.
 //
 
-import { $, $$ } from "./lib.js";
 import { isDarkModeEnabled } from "./appearance.js";
+import { $, $$ } from "./lib.js";
 
 const greetingSection = $("#greeting");
 const introSection = $("#intro");
@@ -149,6 +149,61 @@ addIntersectionObserverFor(sendIcon, (entries, observer) => {
     //     sendIcon.style.animation = null;
     // }
 });
+
+ // Animate section headings
+const headings = $$(`.section-inner-container > h2, .section-inner-container > div > h2, .section-inner-container > div > a`);
+headings.forEach(heading => {
+    addIntersectionObserverFor(heading, (entries, observer) => {
+        if (entries[0].isIntersecting) {
+            heading.style.animation = "slide_in 0.75s ease-out both";
+            observer.unobserve(heading);
+        }
+    });
+});
+
+export function initAnimations() {
+    // Animate tiles in each section separately
+    ["#intro", "#skills", "#projects", "#contact"].forEach(section => {
+        // Animate tiles
+        const sectionTiles = Array.from($$(section + " .tile"));
+        const totalTiles = sectionTiles.length;
+        
+        sectionTiles.forEach((tile, i) => {
+            let delay;
+            if (totalTiles === 1) {
+                delay = 0;
+            } else if (totalTiles % 2 === 0) {
+                // Even number: alternate 0.1, 0.2
+                delay = (i % 2 === 0) ? 0.1 : 0.2;
+            } else {
+                // Odd first gets 0, rest alternate 0.1, 0.2
+                if (i === 0) {
+                    delay = 0;
+                } else {
+                    delay = ((i - 1) % 2 === 0) ? 0.1 : 0.2;
+                }
+            }
+            
+            addIntersectionObserverFor(tile, (entries, observer) => {
+                if (entries[0].isIntersecting) {
+                    tile.style.animation = `slide_in 0.5s ease-out both ${delay * 1.25}s`;
+                    observer.unobserve(tile);
+                }
+            });
+        });
+    });
+    
+    // Animate timeline items
+    const timelineItems = Array.from($("#timeline .row").children);
+    timelineItems.forEach((item, index) => {
+        addIntersectionObserverFor(item, (entries, observer) => {
+            if (entries[0].isIntersecting) {
+                item.style.animation = `slide_in 0.5s ease-out both ${index * 0.2}s`;
+                observer.unobserve(item);
+            }
+        });
+    });
+}
 
 //
 // Click listeners

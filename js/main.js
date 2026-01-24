@@ -173,6 +173,11 @@ fetchJSON("assets/data.json").then(data => {
     });
 
     refreshAppearance();
+    
+    // Initialize animations after all tiles are in DOM
+    import("./animations.js").then(module => {
+        module.initAnimations();
+    });
 }).catch(error => console.error(error));
 
 async function fetchJSON(url) {

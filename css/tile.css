@@ -10,6 +10,7 @@
   min-height: 576px !important;
   overflow: hidden;
   position: relative;
+  opacity: 0;
 }
 
 .tile>.tile-overlay {
