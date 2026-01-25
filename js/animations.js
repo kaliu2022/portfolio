@@ -125,9 +125,9 @@ addIntersectionObserverFor($("#skills .row .col"), (entries, observer) => {
     if (entries[0].isIntersecting) {
         if (window.matchMedia("(max-width: 767px)").matches) {
             // Mobile
-            // rows.setAnimation("scroll-mobile 90s linear infinite");
+            // rows.setAnimation("scroll_mobile 90s linear infinite");
             rows.forEach((row, i) => {
-                row.style.animation = `scroll-mobile ${60 * (3 - i) / 2}s linear infinite`;
+                row.style.animation = `scroll_mobile ${60 * (3 - i) / 2}s linear infinite`;
             });
         } else {
             // rows.setAnimation("scroll 90s linear infinite");

@@ -263,39 +263,6 @@
   }
 }
 
-@keyframes point-down {
-  0% {
-    transform: translateY(-2px);
-  }
-
-  50% {
-    transform: translateY(2px);
-  }
-
-  100% {
-    transform: translateY(-2px);
-  }
-}
-
-@-webkit-keyframes point-down {
-  0% {
-    -webkit-transform: translateY(-2px);
-  }
-
-  50% {
-    -webkit-transform: translateY(2px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-2px);
-  }
-}
-
-#learn-more i.bi-chevron-down {
-  display: inline-block;
-  animation: point-down 1s infinite;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -316,7 +283,7 @@
   }
 }
 
-@keyframes scroll-mobile {
+@keyframes scroll_mobile {
   0% {
     transform: translateX(0);
   }
@@ -326,7 +293,7 @@
   }
 }
 
-@-webkit-keyframes scroll-mobile {
+@-webkit-keyframes scroll_mobile {
   0% {
     transform: translateX(0);
   }
@@ -336,7 +303,7 @@
   }
 }
 
-@keyframes scroll-by-width {
+@keyframes scroll_by_width {
   from {
     transform: translateX(0);
   }
@@ -345,7 +312,7 @@
   }
 }
 
-@-webkit-keyframes scroll-by-width {
+@-webkit-keyframes scroll_by_width {
   from {
     transform: translateX(0);
   }
@@ -354,7 +321,7 @@
   }
 }
 
-@keyframes scroll-by-width-reverse {
+@keyframes scroll_by_width_reverse {
   from {
     transform: translateX(calc(-1 * var(--scroll-width)));
   }
@@ -363,7 +330,7 @@
   }
 }
 
-@-webkit-keyframes scroll-by-width-reverse {
+@-webkit-keyframes scroll_by_width_reverse {
   from {
     transform: translateX(calc(-1 * var(--scroll-width)));
   }
