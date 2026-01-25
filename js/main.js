@@ -77,7 +77,7 @@ fetchJSON("assets/data.json").then(data => {
     // Skills
     const rows = $$(".technologies-row");
     const languages = ["html", "css", "js", "php", "java", "python", "swift", "c"];
-    const technologies = ["node", "react", "docker", "gcp", "pg", "mysql", "mongodb", "ios-sdk"];
+    const technologies = ["node", "nextjs", "react", "docker", "mysql", "pg", "gcp", "ios-sdk"];
     const tools = ["github", "postman", "vscode", "eclipse", "android-studio", "intellij", "xcode", "terminal"];
     for (let i = 0; i < 2; i++) {
         for (const language of languages)
