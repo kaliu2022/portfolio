@@ -27,6 +27,7 @@
   --violet: #8876fe;
   --violet-secondary: #9f91fe;
   --very-dark-grey: rgb(16, 16, 16);
+  color-scheme: light dark;
 }
 
 /**********************
@@ -57,6 +58,9 @@
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   transition: background-color 0.5s ease;
+
+  /* background-color: light-dark(var(--nav-background), var(--nav-background-dark) ); */
+  background-color: var(--nav-background-dark);
 }
 
 .bg-blue-gradient {

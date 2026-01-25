@@ -33,9 +33,9 @@ NodeList.prototype.removeClass = function (c) {
 const isNavbarCollapsed = () => !navBar.classList.contains("not-collapsed");
 
 const lightAppearance = () => {
-    navBar.classList.remove("navbar-dark");
-    navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-secondary)");
-    blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background)" : "var(--light-secondary)");
+    // navBar.classList.remove("navbar-dark");
+    // navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-secondary)");
+    // blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background)" : "var(--light-secondary)");
     lightOutlineButtons.removeClass("btn-outline-light");
     lightOutlineButtons.addClass("btn-outline-primary");
     miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
@@ -49,9 +49,9 @@ const lightAppearance = () => {
 };
 
 const darkAppearance = () => {
-    navBar.classList.add("navbar-dark");
-    navBarTogglerBreadCrusts.setBackgroundColor("var(--light-secondary)");
-    blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background-dark)" : "var(--dark-secondary)");
+    // navBar.classList.add("navbar-dark");
+    // navBarTogglerBreadCrusts.setBackgroundColor("var(--light-secondary)");
+    // blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background-dark)" : "var(--dark-secondary)");
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
