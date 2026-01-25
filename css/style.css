@@ -100,27 +100,27 @@ i.bi.bi-chevron-down {
   }
 
   #navbar-content.collapsing-in .nav-item {
-    animation: fade_in 0.5s ease-in-out forwards;
+    animation: fade_slide_in 0.25s ease-in-out forwards;
   }
   
   #navbar-content.collapsing-in .nav-item:nth-child(1) {
-    animation-delay: 0.05s;
-  }
-  
-  #navbar-content.collapsing-in .nav-item:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  #navbar-content.collapsing-in .nav-item:nth-child(3) {
     animation-delay: 0.15s;
   }
   
+  #navbar-content.collapsing-in .nav-item:nth-child(2) {
+    animation-delay: 0.20s;
+  }
+  
+  #navbar-content.collapsing-in .nav-item:nth-child(3) {
+    animation-delay: 0.25s;
+  }
+  
   #navbar-content.collapsing-in .nav-item:nth-child(4) {
-    animation-delay: 0.2s;
+    animation-delay: 0.30s;
   }
   
   #navbar-content.collapsing-in .nav-item:nth-child(5) {
-    animation-delay: 0.25s;
+    animation-delay: 0.35s;
   }
   
   #navbar-content .nav-item {
@@ -134,7 +134,7 @@ i.bi.bi-chevron-down {
   }
   
   #navbar-content.collapsing-out .nav-item {
-    animation: fade_out 0.25s ease-in-out forwards;
+    animation: fade_slide_out 0.25s ease-in-out forwards;
   }
 
   #main-container {
