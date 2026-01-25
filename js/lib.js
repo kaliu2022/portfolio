@@ -11,3 +11,10 @@ export const $ = s => s.startsWith("#") && ![".", " ", ">"].some(c => s.includes
     : document.querySelector(s);
 
 export const $$ = s => document.querySelectorAll(s);
+
+const CDN_BASE = "https://maybehuy.com/cdn-cgi/image";
+const CDN_PARAMS = "format=auto,quality=85,fit=scale-down";
+
+export function cdnSrcset(path, widths = [128, 256]) {
+    return widths.map(w => `${CDN_BASE}/width=${w},${CDN_PARAMS}/${path} ${w}w`).join(', ');
+}

@@ -6,6 +6,8 @@
 //  Copyright (c) 2024 Foxster. All rights reserved.
 //
 
+import { cdnSrcset } from "../lib.js";
+
 export const Tile = (item, primaryColor, secondaryColor, customCoverDescriptionHTML) => {
   let html = `
     <div class="col
@@ -29,7 +31,21 @@ export const Tile = (item, primaryColor, secondaryColor, customCoverDescriptionH
             ${customCoverDescriptionHTML ?? ""}
           </div>
           <div>
-            <img src="${item.img}" alt="${item.img_alt}" class="${item.img_type}"  ${item.no_padding_bottom ? `style="height: unset; max-height:654px; margin-bottom: -2.25vw;"` : ``}>
+            <img
+              srcset="${item.img_type?.includes('device') 
+                ? cdnSrcset(item.img, [800, 1200, 1600]) 
+                : cdnSrcset(item.img, [400, 600, 800])}"
+              sizes="${item.img_type?.includes('device') 
+                ? '(max-width: 767px) 95vw, 66vw' 
+                : '(max-width: 767px) 90vw, 555px'}"
+              src="${item.img}"
+              alt="${item.img_alt}"
+              class="${item.img_type}"
+              ${item.no_padding_bottom 
+                ? `style="height: unset; max-height:654px; margin-bottom: -2.25vw;"` 
+                : ``
+              }
+            >
           </div>
           ${item.center_image ? "<div></div>" : ""}`;
   else html += `

@@ -8,7 +8,7 @@
 
 import { refreshAppearance } from "./appearance.js";
 import { Tile } from "./components/Tile.js";
-import { $, $$ } from "./lib.js";
+import { $, $$, cdnSrcset } from "./lib.js";
 
 function initHellos() {
     const hellos = [
@@ -17,7 +17,7 @@ function initHellos() {
         "שלום, עולם!", "Hej, Världen!", "Cześć, Świecie!", "Ahoj, Světe!", "Hei, Maailma!", "Helló, Világ!", "नमस्ते, दुनिया!",
         "Sawubona, Mhlaba!", "Jambo, Dunia!", "สวัสดี, โลก!", "Xin Chào, Thế Giới!", "Kumusta, Mundo!"
     ].sort(() => Math.random() - 0.5); // Randomize
-    
+
     // 3 hello sets with no overlap
     const itemsPerRow = Math.ceil(hellos.length / 3);
     const helloSets = [
@@ -25,7 +25,7 @@ function initHellos() {
         hellos.slice(itemsPerRow, itemsPerRow * 2),
         hellos.slice(itemsPerRow * 2)
     ];
-    
+
     const rowsHTML = $$(".hello-row");
     rowsHTML.forEach((rowHTML, i) => {
         const helloSet = helloSets[i];
@@ -35,11 +35,11 @@ function initHellos() {
             span.textContent = hello;
             rowHTML.appendChild(span);
         });
-        
+
         // Measure the width of the first set
         const firstSetWidth = rowHTML.scrollWidth;
         rowHTML.style.setProperty('--scroll-width', `${firstSetWidth}px`); // Set CSS variable for animation
-        
+
         // Add duplicate set for looping
         const spans = rowHTML.querySelectorAll('span');
         spans.forEach(span => rowHTML.appendChild(span.cloneNode(true)));
@@ -63,7 +63,13 @@ fetchJSON("assets/data.json").then(data => {
         $("#timeline>.row").insertAdjacentHTML("beforeend", `
             <div class="col-md-4 col-lg-4 p-4">
               <div class="d-flex flex-column align-items-center text-center gap-3 px-3">
-                <img src="${milestone.img}" alt="${milestone.img.split(".") + "-logo"}" class="app-icon">
+                <img
+                    srcset="${cdnSrcset(milestone.img, [64, 128, 256])}" 
+                    sizes="42px"
+                    src="${milestone.img}"
+                    alt="${milestone.img.split(".") + "-logo"}"
+                    class="app-icon"
+                >
                 <p>
                   <span class="fw-kinda-bold">${milestone.title}</span><br>
                   <span>${milestone.subtitle}</span><br>
@@ -81,13 +87,33 @@ fetchJSON("assets/data.json").then(data => {
     const tools = ["github", "postman", "vscode", "eclipse", "android-studio", "intellij", "xcode", "terminal"];
     for (let i = 0; i < 2; i++) {
         for (const language of languages)
-            rows[0].insertAdjacentHTML("beforeend", `<img src="assets/img/technology-icons/${language}.png" alt="${language}">`);
+            rows[0].insertAdjacentHTML("beforeend", `
+                <img
+                    src="assets/img/technology-icons/${language}.png"
+                    alt="${language}"
+                >
+            `);
         for (const technology of technologies)
-            rows[1].insertAdjacentHTML("beforeend", `<img src="assets/img/technology-icons/${technology}.png" alt="${technology}">`);
+            rows[1].insertAdjacentHTML("beforeend", `
+                <img
+                    src="assets/img/technology-icons/${technology}.png"
+                    alt="${technology}"
+                >
+            `);
         for (const tool of tools)
-            rows[2].insertAdjacentHTML("beforeend", `<img src="assets/img/technology-icons/${tool}.png" alt="${tool}">`);
+            rows[2].insertAdjacentHTML("beforeend", `
+                <img
+                    src="assets/img/technology-icons/${tool}.png"
+                    alt="${tool}"
+                >
+            `);
     }
-    rows[1].insertAdjacentHTML("beforeend", `<img src="assets/img/technology-icons/${technologies[0]}.png" alt="${technologies[0]}">`);
+    rows[1].insertAdjacentHTML("beforeend", `
+        <img
+            src="assets/img/technology-icons/${technologies[0]}.png"
+            alt="${technologies[0]}"
+        >
+    `);
     $("#skills .tile-content p:first-of-type").innerText = data.skills.description;
     data.skills.list.forEach(item =>
         $("#skills>.section-inner-container>.row").insertAdjacentHTML("beforeend",
@@ -173,7 +199,7 @@ fetchJSON("assets/data.json").then(data => {
     });
 
     refreshAppearance();
-    
+
     // Initialize animations after all tiles are in DOM
     import("./animations.js").then(module => {
         module.initAnimations();
