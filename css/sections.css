@@ -73,10 +73,6 @@
   border-radius: 50%;
 }
 
-#timeline >.row > div {
-  opacity: 0;
-}
-
 .technologies-row {
   animation: scroll 90s linear infinite;
 }
