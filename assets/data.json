@@ -8,21 +8,21 @@
         "description": "I enjoy experimenting with new technologies to make software that is user-friendly and functional. Originally aimed at personal problems, several of my endeavors have since been helpful to family members and internet users worldwide. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
         "timeline": [
             {
-                "title": "Dip, Computing Studies <br>and Information Systems",
-                "subtitle": "Douglas College",
-                "date": "September 2020 - April 2022",
-                "img" : "assets/img/logos/douglas-college.jpg"
+                "title": "Associate of Arts <br>Computer Science",
+                "subtitle": "College of DuPage",
+                "date": "August 2022 - December 2024",
+                "img" : "assets/img/logos/College_of_DuPage_Seal.png"
             },
             {
-                "title": "BSc, Computing Science",
-                "subtitle": "Simon Fraser University",
-                "date": "January 2023 - December 2025",
+                "title": "Bachelor of Science, Computer Science",
+                "subtitle": "Northern Illinois University",
+                "date": "January 2025 - May 2027",
                 "img" : "assets/img/logos/sfu.png"
             },
             {
-                "title": "Web Developer",
-                "subtitle": "iData Research",
-                "date": "May 2024 - Present",
+                "title": "Full-Stack Software Engineer Intern",
+                "subtitle": "CPI Openfox",
+                "date": "June 2026 - Present",
                 "img" : "assets/img/logos/idata-research.png"
             }
         ]
@@ -77,7 +77,7 @@
             }
         ]
     },
-    "github_username": "therealFoxster",
+    "github_username": "kaliu2022",
     "projects": {
         "heading": "Project Highlights",
         "color": "#f63e54",
@@ -242,25 +242,11 @@
     "socials": [
         {
             "platform": "github",
-            "username": "therealFoxster"
-        },
-        {
-            "platform": "reddit",
-            "username": "therealFoxster",
-            "username_prefix": "u/"
-        },
-        {
-            "platform": "youtube",
-            "username": "foxster.mp4",
-            "username_prefix": "@"
-        },
-        {
-            "platform": "instagram",
-            "username": "maybehuy"
+            "username": "kaliu2022"
         },
         {
             "platform": "linkedin",
-            "username": "huybui-vq",
+            "username": "ethan-nguyen-niu",
             "username_prefix": "in/"
         }
     ]
