@@ -8,13 +8,13 @@
         "description": "I enjoy staying up-to-date on current technology news and expanding my knowledge in the rapidly growing industry. Outside of software development, I also work on broadcast engineering, scholastic esports initiatives and community-building projects!",
         "timeline": [
             {
-                "title": "Associate of Arts <br>Computer Science",
+                "title": "Associate of Arts, Computer Science",
                 "subtitle": "College of DuPage",
                 "date": "August 2022 - December 2024",
                 "img" : "assets/img/logos/College_of_DuPage_Seal.png"
             },
             {
-                "title": "Bachelor of Science, Computer Science",
+                "title": "Bachelor of Science, Computer Science <br>Minor in Business Administration",
                 "subtitle": "Northern Illinois University",
                 "date": "January 2025 - May 2027",
                 "img" : "assets/img/logos/northern-illinois.jpg"
