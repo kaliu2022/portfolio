@@ -48,7 +48,7 @@
   }
 }
 
-/* Slide in (for greeting Memoji) */
+/* Slide in */
 @keyframes slide_in {
   from {
     transform: translateY(35px);

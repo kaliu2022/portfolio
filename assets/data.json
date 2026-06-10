@@ -1,11 +1,11 @@
 {
     "greeting": {
-        "heading": "Hello, World!",
-        "description": "I make things for iOS and the Web."
+        "heading": "Ethan Nguyen",
+        "description": "I create full-stack web applications and mobile apps."
     },
     "intro": {
-        "heading": "\"You know, I'm something of a <span style=\"color: var(--azure);\">scientist</span> myself.\"",
-        "description": "I enjoy experimenting with new technologies to make software that is user-friendly and functional. Originally aimed at personal problems, several of my endeavors have since been helpful to family members and internet users worldwide. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
+        "heading": "\"I think we can say, we are <span style=\"color: var(--azure);\">living</span> the <span style=\"color: var(--azure);\">impossible</span>.\"",
+        "description": "I enjoy staying up-to-date on current technology news and expanding my knowledge in the rapidly growing industry. Outside of software development, I also work on broadcast engineering, scholastic esports initiatives and community-building projects!",
         "timeline": [
             {
                 "title": "Associate of Arts <br>Computer Science",
@@ -17,13 +17,19 @@
                 "title": "Bachelor of Science, Computer Science",
                 "subtitle": "Northern Illinois University",
                 "date": "January 2025 - May 2027",
-                "img" : "assets/img/logos/sfu.png"
+                "img" : "assets/img/logos/northern-illinois.jpg"
+            },
+             {
+                "title": "Marketing Partnerships Intern",
+                "subtitle": "Turtle Beach",
+                "date": "June 2025 - May 2026",
+                "img" : "assets/img/logos/turtlebeach.jpg"
             },
             {
                 "title": "Full-Stack Software Engineer Intern",
                 "subtitle": "CPI Openfox",
                 "date": "June 2026 - Present",
-                "img" : "assets/img/logos/idata-research.png"
+                "img" : "assets/img/logos/openfox.jpg"
             }
         ]
     },

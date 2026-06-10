@@ -8,7 +8,7 @@
 
 import { refreshAppearance } from "./appearance.js";
 import { Tile } from "./components/Tile.js";
-import { $, $$, cdnSrcset } from "./lib.js";
+import { $, $$ } from "./lib.js";
 
 function initHellos() {
     const hellos = [
@@ -64,8 +64,6 @@ fetchJSON("assets/data.json").then(data => {
             <div class="col-md-4 col-lg-4 p-4 initially-hidden">
               <div class="d-flex flex-column align-items-center text-center gap-3 px-3">
                 <img
-                    srcset="${cdnSrcset(milestone.img, [64, 128, 256])}" 
-                    sizes="42px"
                     src="${milestone.img}"
                     alt="${milestone.img.split(".") + "-logo"}"
                     class="app-icon"

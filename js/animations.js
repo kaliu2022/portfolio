@@ -109,7 +109,6 @@ const addIntersectionObserverFor = (element, callback) => {
 // Greeting section
 addIntersectionObserverFor(greetingSection, (entries, observer) => {
     if (entries[0].isIntersecting) {
-        $("#greeting .memoji").style.animation = "slide_in 2s both 0.25s";
         $$("#greeting .text-white").setAnimation("fade_in 2s both 0.5s");
         // $("#learn-more").style.animation = "slide_in_down 1s both 1.25s";
     } else {
