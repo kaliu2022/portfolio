@@ -91,17 +91,13 @@
         "description": "Still thinking of a good description for this section...",
         "list": [
             {
-                "heading": "DontEatMyContent",
-                "cover_description": "Prevent the notch/Dynamic Island from munching on 2:1 video content in YouTube.",
+                "heading": "InvenChef",
+                "cover_description": "Inventory intelligence for restaurants - Know exactly what to buy. When to buy it.",
                 "topics": [
-                    "c",
-                    "ios",
-                    "youtube",
-                    "objective-c",
-                    "reverse-engineering",
-                    "iphone",
-                    "notch",
-                    "dynamic-island"
+                    "html",
+                    "css",
+                    "javascript",
+                    "postgresql"
                 ],
                 "img": "assets/img/mockups/iphone/iphone-donteatmycontent.png",
                 "img_type": "device landscape",
@@ -110,8 +106,8 @@
                 "md_size": 6,
                 "lg_size": 8,
                 "custom_url_2": {
-                    "text": "View iDownloadBlog article",
-                    "url": "https://www.idownloadblog.com/2022/09/22/donteatmycontent/"
+                    "text": "View InvenChef Demo Page",
+                    "url": "https://lucent-dango-4f1b03.netlify.app"
                 }
             },
             {
@@ -156,17 +152,13 @@
                 }
             },
             {
-                "heading": "CollabHub",
-                "cover_description": "Fullstack (PERN) project management application.",
+                "heading": "NeuroCast",
+                "cover_description": "AI-powered neuro-adaptive podcast that generates a unique audio experience based on your current mental state.",
                 "topics": [
-                    "react",
-                    "nodejs",
+                    "full-stack",
                     "javascript",
-                    "express",
-                    "typescript",
-                    "postgresql",
-                    "scss",
-                    "full-stack"
+                    "nodejs",
+                    "elevenlabs"
                 ],
                 "img": "assets/img/mockups/macbook/macbook-collabhub.png",
                 "img_type": "device landscape",
@@ -175,13 +167,13 @@
                 "lg_size": 8
             },
             {
-                "heading": "Pairs",
-                "cover_description": "100 Days of Swift - Milestone Project 11 (UIKit): Card matching game.",
+                "heading": "Meatball Mall",
+                "cover_description": "An e-commerce web app for ordering the world's finest meatballs, with customer cart/checkout and employee inventory management. Satisfying all your meatball needs since yesterday.",
                 "topics": [
-                    "swift",
-                    "ios",
-                    "uikit",
-                    "catransform3d"
+                    "html",
+                    "css",
+                    "php",
+                    "mariadb"
                 ],
                 "img": "assets/img/mockups/ipad/ipad-pairs.png",
                 "img_type": "device landscape",
