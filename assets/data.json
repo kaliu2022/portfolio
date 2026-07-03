@@ -160,9 +160,9 @@
                     "nodejs",
                     "elevenlabs"
                 ],
-                "img": "assets/img/mockups/macbook/macbook-collabhub.png",
+                "img": "assets/img/mockups/macbook/macbook-neurocast.png",
                 "img_type": "device landscape",
-                "img_alt": "collabhub-demo",
+                "img_alt": "neurocast-demo",
                 "md_size": 6,
                 "lg_size": 8
             },
